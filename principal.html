@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <linkhref="https://fonts.googleapis.com/css?family=Roboto"rel="stylesheet"/>
+    <linkrel="stylesheet"href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"crossorigin="anonymous"/>
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Ingreso Simped</title>
+  </head>
+  <body>
+    <header>
+      <a href="#" class="logo">
+        <img src="images/sinped.png" alt="Sinped">
+      </a>
+      <div class="tit">
+        <h1>SINPED</h1>
+    </div>
+    </header>
+    <div class="container">
+      <div class="login-container">
+        <div class="register">
+          <h1>Registrarse</h1>
+          <form class="form" name="Formulario" action="registro.php" method="post">
+            <input class="control" type="text" name="nombre" placeholder="Nombre" required/>
+            <input class="control" type="text" name="correo" placeholder="Correo" required/>
+            <input class="control" type="text" name="usuario" placeholder="Usuario" required/>
+            <input class="control" type="password" name="pass" placeholder="Contraseña" required/>
+            <input type="submit" class="submit" value="Guardar">
+          </form>
+        </div>
+        <div class="login">
+          <h1>Iniciar Sesión</h1>
+          <div>
+          <form class="form" name="Login" action="login.php" method="post">
+            <input class="control" type="text" name="usuario" placeholder="Usuario" required/>
+            <input class="control" type="password" name="pass" placeholder="Contraseña" required/>
+            <input type="submit" class="submit" value="Iniciar Sesion">
+          </form>
+          </div>
+        </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
