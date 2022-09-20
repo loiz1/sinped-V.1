@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-image: url(../images/bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+/*Encabezado con el logo*/
+body{
+    margin: 0px;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 95px;
+    background-image: linear-gradient(to bottom right, #eee5b1, #4cac6e);
+    align-items: center;
+    padding: 5px;
+    color: #3d6149;
+}
+.tit h1{
+    font-size: 50px;
+    font-weight: 650;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+.logo img{
+    width: 100px;
+    height: 100px;
+    margin-right: 10%;
+    margin-top: auto;
+}
+nav a{
+font-weight: 700;
+color: #4cac6a;
+margin-right: 10px;
+}
+nav a:hover{
+    color: rgb(103, 6, 6);
+}
+.container{
+    width: 100%;
+    height: 80vh;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.inicio-container{
+    display: flex;
+    align-items: center;
+    width: 650px;
+    height: 400px;
+    background-image: linear-gradient(to bottom right, #eee5b1, #3d6149);
+    box-shadow: 0 1px 1px rgba(242, 187, 105, 0.456);
+}
+
+.panel1 a{
+    display: flex;
+    padding: 5%;
+    color: #000210;
+    font-size: 15px;
+    font-weight:bolder;
+    margin: 15px;
+    margin-left: 50px;
+    background-image: linear-gradient(to bottom right, #7ca649, #85a261);
+    border: 2px solid rgba(23, 9, 9, 0.916);
+}
+.panel1 h1{
+    color: rgb(49, 7, 89);
+    margin-bottom: 10px;
+    margin-left: 90px;
+
+}
+.panel1 h3{
+    color: rgb(21, 21, 22);
+    margin-bottom: 30px;
+    margin-left: 50px;
+    
+}
+
+img{
+    margin-top: 60px;
+    width: 300px;
+    height: 300px;
+    padding: 10%;
+    border-radius: 40%;
+}
+
+@media only screen and (max-width: 540px) {
+    .inicio-container {
+        display: block;
+    }
+    .panel2 {
+        transform: translateX(-520%) rotate(90deg);
+    }
+    .panel1,.a{
+        width: 70%;
+    }
+    .panel1,.h1 {
+        margin-left: 50px;
+    }
+}

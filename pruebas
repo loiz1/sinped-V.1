@@ -1,0 +1,22 @@
+<?php
+
+$conexion = mysqli_connect('localhost','root','','sinped') or die(mysql_error($mysqli));
+
+insertar($conexion);
+
+function insertar($conexion){
+    $cedula=$_POST['cedula_fac'];
+    $nombre=$_POST['nombre_cliente'];
+    $fechacom=$_POST['fec_compra'];
+    $numerofact=$_POST['num_factura'];
+    $items=$_POST['can_items'];
+
+    $consulta = "INSERT INTO factura (cedula, nombre, fechacom, numerofact, items) 
+    VALUES ('$nombre','$nombre','$fechacom','$numerofact','$items')";
+
+    mysqli_query($conexion, $consulta);
+    mysqli_close($conexion);
+    header("location:menu3.html");
+    
+} 
+?>

@@ -10,42 +10,41 @@
     <title>Crear Pedido</title>
 </head>
 <body>
+    <header>
+        <a href="inicio.html" class="logo">
+            <img src="images/sinped.png" alt="Sinped"></a>
+            <div class="tit">
+                <h1>SINPED</h1>
+            </div>
+    </header>
     <div class="container">
-    <div class="cliente-items">
-        <div class="cliente">
-        <h1>Crear Pedido</h1>
-        <h2>Datos del cliente</h2>
-        <form action="" method="post">
+        <div class="cliente-items">
+            <div class="cliente">
+            <h1>Crear Pedido</h1>
+            <h2>Datos del cliente</h2> 
+            <form class="form" name="Crear_Pedido" action="pedido.php" method="post">
             <input type="text" placeholder="Nombre" class="nombre" required/>
             <input type="text" placeholder="Correo" class="correo" required/>
             <input type="number" placeholder="Cedula" class="cedula" required/>
             <input type="number" placeholder="Telefono" class="telefono" required/>
             <input type="text" placeholder="Pedido" class="pedido" required/>
             <input type="text" placeholder="Direccion" class="direccion" required/>
-            <input type="number" placeholder="Factura" class="factura" required/>
+            <input type="number" placeholder="Factura" class="factura1" required/>
             <input type="date" placeholder="Entrega" class="entrega" required/>
-            <input type="text" placeholder="Direccion" class="direccion" required/>
             <input type="submit" class="submit" value="Guardar">
         </form>
         </div>
-        <div class="items">
-        <h1>Agregar Productos</h1>
+        <div class="factura">
+        <h1>Datos de Factura</h1>
         <div>
-            <input type="text" placeholder="Usuario" class="Usuario"/>
-            <input type="text" placeholder="Contraseña" class="pass"/>
-            <input type="text" placeholder="Contraseña" class="pass"/>
-            <input type="text" placeholder="Contraseña" class="pass"/>
-            <input type="text" placeholder="Contraseña" class="pass"/>
-            <input type="text" placeholder="Contraseña" class="pass"/>
-            <form action="#">
-                <label for="lang">Lenguaje</label>
-                <select name="lenguajes" id="lang">
-                <option value="javascript">JavaScript</option>
-                <option value="php">PHP</option>
-                </select>
-                <input type="submit" value="Enviar" />
-            </form>
+            <form class="form" name="Crear_Factura" action="factura.php" method="post">
+            <input class="control" type="number" name="cedula_fac" placeholder="Cedula Cliente" required/>
+            <input class="control" type="text" name="nombre_cliente" placeholder="Nombre Cliente" required/>
+            <input class="control" type="date" name="fec_compra" placeholder="Fecha de Compra" required/>
+            <input class="control" type="number" name="num_factura" placeholder="Numero de Factura" required/>
+            <input class="control" type="number" name="can_items" placeholder="Cantidad de Items" required/>
             <input type="submit" class="submit" value="Guardar"> 
+            </form>
         </div>
         </div>
     </div>

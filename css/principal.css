@@ -95,22 +95,6 @@ header{
     cursor: pointer;
 }
 
-.register::after {
-    content: "<>";
-    position: absolute;
-    width: 25px;
-    height: 25px;
-    top: 50%;
-    right: -23px;
-    padding: 10px;
-    text-align: center;
-    font-size: 19px;
-    background: #f4ecb1;
-    border-radius: 50%;
-    transform: translateY(-50%);
-    box-shadow: -1px 1px 3px 1px rgba(0, 0, 0, .2);
-    color: #7c7c7c;
-}
 
 /*Caja con formulario Login*/
 .login {
@@ -160,15 +144,7 @@ header{
         display:block;
     }
 
-    .register,
-    .login {
+    .register,.login {
         flex: block;
-    }
-
-    .register::after {
-        top: unset;
-        bottom: -25px;
-        left: 50%;
-        transform: translateX(-50%) rotate(90deg);
     }
 }
