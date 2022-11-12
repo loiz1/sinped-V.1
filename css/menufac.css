@@ -53,16 +53,19 @@ margin-right: 10px;
 nav a:hover{
     color: rgb(103, 6, 6);
 }
+
+/*cierra logo*/
+
+
 .container {
     width: 100%;
-    height: 110vh;
-    padding: 90px;
+    height: 80vh;
+    padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-/* cajas con degradado*/
 .cliente-items {
     display: flex;
     width: 650px;
@@ -70,22 +73,12 @@ nav a:hover{
     background-image: linear-gradient(to bottom right, #eee5b1, #3d6149);
     box-shadow: 0 1px 1px rgba(242, 187, 105, 0.456);
 }
-.factura {
-    background-image: linear-gradient(to bottom right, #1ab6b6, #4cac6e);
-    padding: 10%;
-    width: 650px;
-    height: auto;
-}
-/*cierra cajas*/
 
 .cliente,.items {
     padding: 10%;
     position: relative;
 }
-.cliente h1, h2 {
-    color: rgb(49, 7, 89);
-    margin-bottom: 20px;
-}
+
 .cliente input {
     width: 100%;
     padding: 5px;
@@ -95,7 +88,7 @@ nav a:hover{
     outline: none;
 }
 .cliente .submit {
-    width: 200px;
+    width: 150px;
     margin: 15px 0px;
     padding: 10px;
     background-image: linear-gradient(to bottom right, #8583fa, #034fe8);
@@ -106,37 +99,15 @@ nav a:hover{
     cursor: pointer;
 }
 
-.factura input {
-    width: 100%;
-    padding: 5px;
-    font-size: 15px;
-    margin-bottom: 10px;
-    border-style: none;
-    outline: none;
-    top: auto;
-}
-.factura .submit {
-    width: 200px;
-    margin: 15px 0px;
-    padding: 10px;
-    background-image: linear-gradient(to bottom right, #8583fa, #034fe8);
-    border: 2px solid rgba(246, 241, 241, 0.916);
-    border-radius: 12%;
-    font-size: 15px;
-    color: azure;
-    cursor: pointer;
-}
-.factura h1{
-    color: rgb(49, 7, 89);
-    margin-bottom: 20px;
-}
 
-@media (max-width: 580px) {
-    .cliente-items {
-        display:block;
-    }
 
-    .cliente,.factura {
-        flex: block;
-    }
+
+@media (max-width: 700px) {
+        .cliente-items{max-width: 530px; margin-top: 160px;}
+        .cliente-items{display: inline-block;}
+        .factura{max-width: 450px;}
+}
+@media (max-width: 560px){
+        .cliente-items{max-width: 460px;margin-top: 130px;}
+        .factura{max-width: 400px;}
 }
